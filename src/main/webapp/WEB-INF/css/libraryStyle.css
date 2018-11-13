@@ -1,0 +1,16 @@
+.remark {
+    color: blue;
+}
+
+.opus {
+    border: solid 2px;
+}
+
+.opusHeader {
+    text-align: center;
+}
+
+.opusAction {
+    display: block;
+    margin: 0 auto;
+}
