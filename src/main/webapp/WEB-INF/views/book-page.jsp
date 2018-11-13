@@ -15,16 +15,16 @@
 <c:choose>
     <c:when test="${not empty bookies}">
 <table class="opus">
-    <tr>
+    <tr class="opusFirstRow">
         <th class="opusHeader">Title</th>
         <th class="opusHeader">Author</th>
         <th class="opusHeader">Action</th>
     </tr>
 
     <c:forEach var="book" items="${bookies}">
-        <tr>
-            <td>${book.title}</td>
-            <td>${book.author}</td>
+        <tr class="opusBookRow">
+            <td class="opusData">${book.title}</td>
+            <td class="opusData">${book.author}</td>
             <form:form action="returnBook" modelAttribute="book" method="POST">
             <td>
                 <input type="hidden" value="${book.id}" name="id" />
@@ -51,16 +51,16 @@
 <c:choose>
     <c:when test="${not empty books}">
 <table class="opus">
-    <tr>
+    <tr class="opusFirstRow">
         <th class="opusHeader">Title</th>
         <th class="opusHeader">Author</th>
         <th class="opusHeader">Action</th>
     </tr>
 
     <c:forEach var="book" items="${books}">
-        <tr>
-            <td>${book.title}</td>
-            <td>${book.author}</td>
+        <tr class="opusBookRow">
+            <td class="opusData">${book.title}</td>
+            <td class="opusData">${book.author}</td>
             <form:form action="borrowBook" modelAttribute="book" method="POST">
             <td>
                 <input type="hidden" value="${book.id}" name="id" />
